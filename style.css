@@ -1,0 +1,162 @@
+/* Write some CSS below */
+
+<!Color pallete 
+2F9C95 viridian green
+F8F4F9 ghost white
+3A506B y in mn blue
+6B0F1A persian plum
+E9B44C maximum yellow red>
+
+body {
+  font-family: 'Gupter', serif;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Gupter', serif;
+  font-size:  30px;
+}
+
+h2{
+  font-family: 'Gupter', serif;
+  font-size:  25px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Gupter', serif;
+  color: #2F9C95;
+  font-size:  20px;
+}
+
+a {
+  color: #6B0F1A;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('images/window.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 150px 20px;
+  text-align: center;
+  border: 100px #3A506B;
+  margin:  30px; <!--space around invisible box-->
+}
+
+  .container {
+  width: 800px;
+  margin: auto;
+  border: 30px;
+  border-color: #E9B44C;
+}
+
+.banner h1 {
+  color: white;
+  font-size: 60px;
+ }
+
+.banner p {
+  color: white;
+  font-size: 24px;
+}
+
+.button-green {
+  background-color: #2F9C95;
+  color: white;
+  padding: 16px 20px; <!-- height x width around the text in button -->
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+  transition: .3s;
+  width:  200px;
+}
+
+.button-green:hover {
+  background-color: #F8F4F9;
+  color: #6B0F1A;
+}
+
+.card-white {
+  background: white;
+  box-shadow: 0 0 16px rgba(0,0,0,0.4);
+  border-radius: 35px;
+  width: 200px;
+  text-align: center;
+  padding: 5px 5px;
+  margin: 8px;
+}
+
+.card-white:hover {
+  background-color: #F8F4F9;
+  color: #6B0F1A;
+}
+
+.card-white h3 {
+  margin: 10px 10px;
+}
+
+.card-white h3:hover {
+  background-color: #F8F4F9;
+  color: #6B0F1A;
+}
+
+.card-white img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 35px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+
+.footer {
+  background: grey;
+  text-align: center;
+  padding: 10px 10px;
+}
+
+.footer p {
+  color: #F8F4F9;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+<! ---- /* Cards media queries */  --- >
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-white {
+    width: auto;
+  }
+}
+  
+/* Container media queries */
+@media (min-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+
+
+@media (min-width: 800px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container {
+    width: 800px;
+  }
+}
